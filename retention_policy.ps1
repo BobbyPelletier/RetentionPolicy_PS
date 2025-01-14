@@ -1,5 +1,5 @@
 # Specify the target directory
-$targetDirectory = "D:\Store"
+$targetDirectory = "path"
 
 # Get all subdirectories older than 91 days
 $oldFolders = Get-ChildItem -Path $targetDirectory -Directory | Where-Object { $_.LastWriteTime -le (Get-Date).AddDays(-91) }
